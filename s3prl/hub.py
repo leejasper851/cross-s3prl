@@ -6,6 +6,7 @@ from s3prl.upstream.baseline.hubconf import *
 from s3prl.upstream.byol_a.hubconf import *
 from s3prl.upstream.byol_s.hubconf import *
 from s3prl.upstream.cpc.hubconf import *
+from s3prl.upstream.cross_hubert.hubconf import *
 from s3prl.upstream.data2vec.hubconf import *
 from s3prl.upstream.decoar2.hubconf import *
 from s3prl.upstream.decoar.hubconf import *
