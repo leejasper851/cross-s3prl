@@ -48,6 +48,8 @@ class DownstreamExpert(nn.Module):
 
     def get_dataset(self):
         self.base_path = self.datarc['file_path']
+        # jlee: uncomment for quick temporary fix for changed dataset filepaths
+        # self.base_path = '/data1/scratch/datasets_pyp/superb/ic/fluent_speech_commands_dataset'
         train_df = pd.read_csv(os.path.join(self.base_path, "data", "train_data.csv"))
         valid_df = pd.read_csv(os.path.join(self.base_path, "data", "valid_data.csv"))
         test_df = pd.read_csv(os.path.join(self.base_path, "data", "test_data.csv"))
