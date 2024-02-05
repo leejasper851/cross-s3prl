@@ -92,7 +92,7 @@ def cross_hubert_base(refresh=False, legacy=True, **kwargs):
     #     kwargs[
     #         "ckpt"
     #     ] = "https://huggingface.co/s3prl/converted_ckpts/resolve/main/hubert_base_ls960.pt"
-    kwargs["ckpt"] = "/home/jasperlee/cross-attn-project/fairseq_training_jlee/CrossHubertRunDistill3L16GTHalfTime/checkpoints/checkpoint_best.pt"
+    kwargs["ckpt"] = "/home/jasperlee/cross-attn-project/fairseq_training_jlee/CrossHubertRunDistill6L16GT/checkpoints/checkpoint_best.pt"
     return cross_hubert_custom(refresh=refresh, legacy=legacy, **kwargs)
 
 
