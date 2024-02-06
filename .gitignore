@@ -166,3 +166,7 @@ docs/source/_autosummary/
 sample_hidden_states/
 converted_ckpts/
 
+# downstream config files with filepaths to datasets
+s3prl/downstream/fluent_commands/config.yaml
+s3prl/downstream/ctc/libriphone.yaml
+s3prl/downstream/asr/config.yaml
