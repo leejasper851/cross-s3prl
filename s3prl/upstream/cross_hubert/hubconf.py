@@ -92,22 +92,36 @@ def cross_hubert_base(refresh=False, legacy=True, **kwargs):
     #     kwargs[
     #         "ckpt"
     #     ] = "https://huggingface.co/s3prl/converted_ckpts/resolve/main/hubert_base_ls960.pt"
-    kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill6L16GT/checkpoints/checkpoint_best.pt"
+    kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill6L4GTHalfTime/checkpoints/checkpoint_best.pt"
     return cross_hubert_custom(refresh=refresh, legacy=legacy, **kwargs)
 
 
-# def cross_hubert_temp(refresh=False, legacy=True, **kwargs):
-#     """
-#     The Base model
-#         refresh (bool): whether to download ckpt/config again if existed
-#     """
-#     # kwargs["ckpt"] = "https://dl.fbaipublicfiles.com/hubert/hubert_base_ls960.pt"
-#     # if not legacy:
-#     #     kwargs[
-#     #         "ckpt"
-#     #     ] = "https://huggingface.co/s3prl/converted_ckpts/resolve/main/hubert_base_ls960.pt"
-#     kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill3L16GTHalfTime/checkpoints/checkpoint_best.pt"
-#     return cross_hubert_custom(refresh=refresh, legacy=legacy, **kwargs)
+def cross_hubert_temp(refresh=False, legacy=True, **kwargs):
+    """
+    The Base model
+        refresh (bool): whether to download ckpt/config again if existed
+    """
+    # kwargs["ckpt"] = "https://dl.fbaipublicfiles.com/hubert/hubert_base_ls960.pt"
+    # if not legacy:
+    #     kwargs[
+    #         "ckpt"
+    #     ] = "https://huggingface.co/s3prl/converted_ckpts/resolve/main/hubert_base_ls960.pt"
+    kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill6L16GTConvHalfTime/checkpoints/checkpoint_best.pt"
+    return cross_hubert_custom(refresh=refresh, legacy=legacy, **kwargs)
+
+
+def cross_hubert_temp1(refresh=False, legacy=True, **kwargs):
+    """
+    The Base model
+        refresh (bool): whether to download ckpt/config again if existed
+    """
+    # kwargs["ckpt"] = "https://dl.fbaipublicfiles.com/hubert/hubert_base_ls960.pt"
+    # if not legacy:
+    #     kwargs[
+    #         "ckpt"
+    #     ] = "https://huggingface.co/s3prl/converted_ckpts/resolve/main/hubert_base_ls960.pt"
+    kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill6L1GTHalfTime/checkpoints/checkpoint_best.pt"
+    return cross_hubert_custom(refresh=refresh, legacy=legacy, **kwargs)
 
 
 def cross_hubert_large_ll60k(refresh=False, legacy=False, **kwargs):
