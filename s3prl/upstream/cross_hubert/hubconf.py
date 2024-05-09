@@ -92,7 +92,7 @@ def cross_hubert_base(refresh=False, legacy=True, **kwargs):
     #     kwargs[
     #         "ckpt"
     #     ] = "https://huggingface.co/s3prl/converted_ckpts/resolve/main/hubert_base_ls960.pt"
-    kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill12L8GTConv/checkpoints/checkpoint_best.pt"
+    kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill12L8GTConvNAHalfTime/checkpoints/checkpoint_best.pt"
     return cross_hubert_custom(refresh=refresh, legacy=legacy, **kwargs)
 
 
@@ -106,7 +106,7 @@ def cross_hubert1(refresh=False, legacy=True, **kwargs):
     #     kwargs[
     #         "ckpt"
     #     ] = "https://huggingface.co/s3prl/converted_ckpts/resolve/main/hubert_base_ls960.pt"
-    kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill12L8GTConv768EmbedHalfTime/checkpoints/checkpoint_best.pt"
+    kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill18L8GTNFFNHalfTime/checkpoints/checkpoint_best.pt"
     return cross_hubert_custom(refresh=refresh, legacy=legacy, **kwargs)
 
 
@@ -120,7 +120,7 @@ def cross_hubert2(refresh=False, legacy=True, **kwargs):
     #     kwargs[
     #         "ckpt"
     #     ] = "https://huggingface.co/s3prl/converted_ckpts/resolve/main/hubert_base_ls960.pt"
-    kwargs["ckpt"] = "../../fairseq_training_jlee/HubertRunDistillHalfTime/checkpoints/checkpoint_best.pt"
+    kwargs["ckpt"] = "../../fairseq_training_jlee/CrossHubertRunDistill12L8GTConvOLTCNAHalfTime/checkpoints/checkpoint_best.pt"
     return cross_hubert_custom(refresh=refresh, legacy=legacy, **kwargs)
 
 
